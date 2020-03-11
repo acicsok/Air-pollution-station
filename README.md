@@ -1,2 +1,2 @@
 # Air-pollution-station
-Station that measure temperature, pressure, UV, particles in air and humidity. 
+Station measures temperature, pressure, UV, particles in air and humidity. 
