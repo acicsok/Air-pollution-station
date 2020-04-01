@@ -20,15 +20,15 @@ APDS9200 _light;
 WiFiClient _client;
 Timer _t;
 
-const unsigned long _myChannelNumber = 864562;
-const String _myWriteAPIKey = "UPIQU8DGO7C413FZ";
+const unsigned long _myChannelNumber = ;
+const String _myWriteAPIKey = "";
 char _thingSpeakAddress[] = "api.thingspeak.com";
 int _status = WL_IDLE_STATUS;
 
 const unsigned long  _interval = 20 * (60 * 1000); //minutes
 
-char _ssid[] = "ssid";                                                           //umetnuti ime wifi mreže u navodnike
-char _pass[] = "pass";                                                           //umetnuti lozinku za spajanje na wifi mrežu u navodnike
+char _ssid[] = "ssid";                                                           //wifi name
+char _pass[] = "pass";                                                           //password
 
 bool _bmpExist = true;
 bool _justStarted = true;
@@ -39,9 +39,9 @@ float _pm10sr = 0; //PM 10.0 (ug/m3):
 
 float _pressure = 0; //Pa
 
-double _uv = 0;                                                             //varijable za mjerenje uv
+double _uv = 0;                                                             //uv
 int _uvIndex = 0;
-float _luminosity = 0;                                                        //varijable za mjerenje svjetla
+float _luminosity = 0;                                                        //light
 
 void setup() {
   // put your setup code here, to run once:
